@@ -18,7 +18,7 @@ def pregunta_01():
     df = pd.read_csv("gm_2008_region.csv",sep=',')
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
-    y = df["life]
+    y = df["life"]
     X = df["fertility"]
 
     # Imprima las dimensiones de `y`
