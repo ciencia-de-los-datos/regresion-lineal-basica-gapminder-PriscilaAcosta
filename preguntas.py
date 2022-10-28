@@ -15,7 +15,7 @@ def pregunta_01():
     Complete el código presentado a continuación.
     """
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv("gm_2008_region.csv",sep=',')
+    df = pd.read_csv("gm_2008_region.csv")
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
     y = df["life"]
@@ -47,22 +47,22 @@ def pregunta_02():
     """
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = ____
+    df = pd.read_csv("gm_2008_region.csv",sep=',')
 
     # Imprima las dimensiones del DataFrame
-    print(____.____)
+    print(df.shape)
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
-    print(____)
+    print(round(df['life'].corr(df['fertility'],method='pearson'),4))
 
     # Imprima la media de la columna `life` con 4 decimales.
-    print(____)
+    print(round(df['life'].mean(),4))
 
     # Imprima el tipo de dato de la columna `fertility`.
-    print(____)
+    print(type(df['life']))
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print(____)
+    print(round(df['GDP'].corr(df['life'],method='pearson'),4))
 
 
 def pregunta_03():
