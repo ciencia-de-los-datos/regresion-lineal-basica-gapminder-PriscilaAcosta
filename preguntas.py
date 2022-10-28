@@ -151,5 +151,5 @@ def pregunta_04():
 
     # Compute and print R^2 and RMSE
     print("R^2: {:6.4f}".format(linearRegression.score(X_test, y_test)))
-    rmse = mean_squared_error(y_test,y_pred,squared=False))
+    rmse = mean_squared_error(y_test,y_pred,squared=False)
     print("Root Mean Squared Error: {:6.4f}".format(rmse))
